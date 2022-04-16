@@ -26,11 +26,11 @@ def quick_sort(nums):
 
 start_time = time.time()
 
-f = open("test.txt", "r").readlines()
+f = open("sorting/test.txt", "r").readlines()
 f = [line.rstrip() for line in f]
 f1 = [int(item) for item in f]
 quick_sort(f1)
-output = open("output.txt", "w+")
+output = open("sorting/output.txt", "w+")
 for i in range(len(f1)):
     output.write(str(f1[i])+ "\n")
 output.close()
