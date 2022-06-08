@@ -1,5 +1,5 @@
 def knapsack(W, weight, cost, n):
-    K = [ [0 for x in range(W + 1)] for x in range(n + 1) ] 
+    K = [ [0 for x in range(W + 1)] for x in range(n + 1) ]
     for i in range(n + 1):
         for j in range(W + 1):
             if i == 0 or j == 0:
